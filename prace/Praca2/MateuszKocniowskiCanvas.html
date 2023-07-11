@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+
+    <canvas id="trasy" width="805" height="1030"></canvas>
+   
+    <script>
+        var ctx;
+        var canvas;
+        var img;
+  
+        window.onload = function() {
+            canvas = document.getElementById('trasy');
+            ctx = canvas.getContext('2d');
+            img = new Image();
+            img.onload = function() {
+                ctx.drawImage (img,0,0,805,1030);
+            }
+            img.src="wlochy.png";
+        }
+
+        function clearCanvas() {
+            ctx.clearRect(0,0,canvas.width,canvas.height)
+        }
+        function rysujPlan1(){
+            clearCanvas();
+            ctx.drawImage(img,0,0,805,1030);
+
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "#440044";
+            ctx.beginPath();
+            ctx.moveTo(443,795);
+            ctx.lineTo(193,177);
+            ctx.lineTo(663,540);
+            ctx.lineTo(443,795);
+            ctx.stroke();
+        }
+
+       
+        function czyscTrasa1(){
+        clearCanvas();
+        ctx.drawImage(img,0,0,805,1030);
+    }
+</script>    
+</head>
+<body>
+   
+
+   </canvas>
+<ul>
+    <li>1. Palermo>Mediolan>Bari<br><button onclick="rysujPlan1()">Pokaż</button></li>
+    <li>czyść<br><button onclick="czyscTrasa1()">czyść</button></li>
+
+</ul>

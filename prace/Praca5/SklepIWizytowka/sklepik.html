@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .collapsible-header{
+            width: 1250px;
+            background-color: rgb(97, 204, 168);
+            border-radius: 10px;
+        }
+        .collapsible-body{
+            background-color: bisque;
+            
+        }
+        body{
+            background-color: blanchedalmond;
+        }
+        button{
+            border-radius: 20px;
+            background-color: cadetblue;
+            color: azure;
+            box-shadow: 5px 5px 10px rgb(105, 168, 168);
+        }
+        .dropdown-trigger{
+            float: right;
+            background-color: rgb(97, 204, 168);
+            color: black;
+            margin-top: -250px;
+            border-radius: 20px;
+        }
+        .dropdown-content{
+            color: aqua;
+            background-color: bisque;
+            border-radius: 20px;
+        }
+        .row{
+            background-color: bisque;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .card{
+            background-color: rgb(90, 153, 153);
+            color: darkkhaki;
+           
+
+        }
+
+    </style>
+    <title>lista produktów</title>
+</head>
+<body>
+   
+    <div class="container">
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header">Warzywa</div>
+                <div class="collapsible-body">
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>pomidor 20zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="10">
+                        <span>cebula 10zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>ogórek 25zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="10">
+                        <span>marchewka 15zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>szczypiorek 10zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="10">
+                        <span>czosnek 20zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>brokół 25zł</span>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Owoce</div>
+                <div class="collapsible-body">
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>Pomarańcze 20zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="10">
+                        <span>jabłka 10zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>Maliny 25zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="10">
+                        <span>cytryna 15zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>limonka 10zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="10">
+                        <span>kiwi 20zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>durian 25zł</span>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Pieczywo</div>
+                <div class="collapsible-body">
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>Chleb 20zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="10">
+                        <span>bułki 10zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>bagietka czosnkowa 25zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="10">
+                        <span>Precle 15zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>Mała bagietka 10zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="10">
+                        <span>bagietka francuska 20zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>Bagietka XXL 25zł</span>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Lody</div>
+                <div class="collapsible-body">
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>Kawowe 20zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="10">
+                        <span>Śmietankowe 10zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>Mięta z czekoladą 25zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="10">
+                        <span>Czekoladowe 15zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>Waniliowe 10zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="10">
+                        <span>sorbet 20zł</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="20">
+                        <span>ciasteczkowe 25zł</span>
+                    </label>
+                </div>
+            </li>
+        </ul>
+        <button onclick="sumowanie()">Zamów</button>
+        <button onclick="usun()">Usuń</button>
+    </div>
+
+    <a id="dropdown-button" class="dropdown-trigger btn" href="#" data-target="dropdown1">Menu</a>
+    <ul id="dropdown1" class="dropdown-content">
+        
+        <li><a href="index.html">Strona główna</a></li>
+        <li> <a href="sklepik.html">sklep</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="sklepik.html">Cos</a></li>
+            
+        
+    </ul>
+    <div class="row">
+        <div class="col s12 m6"> 
+            <div class="card blue-gray darken-1">
+                <div class="card-content white text">
+                    <span class=card-title>witaj w sklepiku</span> 
+                    <p>Aktualności</p>
+                    
+                </div>
+                <div class="card-action">
+                    <a href="prom.html">Promocje</a>
+                    <a href="akt.html">Aktualności</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast"></div>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            var elems =document.querySelectorAll(".collapsible");
+            var instances = M.Collapsible.init(elems);
+            var elems2=document.querySelectorAll(".dropdown-trigger");
+            var instances2 = M.Dropdown.init(elems2);
+        }
+        );
+
+
+        function toggleItem(checkbox){
+            if(checkbox.checked){
+                M.toast({html: 'Dodano do koszyka: '+ checkbox.nextElementSibling.textContent})
+            }
+            else{
+                M.toast({html: 'Usunięto element z koszyka: '+ checkbox.nextElementSibling.textContent})
+            }
+        }
+
+        function usun(){
+            const checkboxes=document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                if(checkbox.checked){
+                    checkbox.checked=false;
+                    M.toast({html: 'Usunięto element z koszyka: '+ checkbox.nextElementSibling.textContent});
+                }
+            });
+        }
+    </script>
+</body>
+</html>

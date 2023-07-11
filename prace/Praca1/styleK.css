@@ -1,0 +1,40 @@
+body{
+    background-color: orange;
+}
+
+#gorak{
+    text-align: left;
+    background-color: rgb(46, 70, 136);
+    color: whitesmoke;
+    border-radius: 20px;
+    font-size: large;
+}
+
+#koszyk{
+    background-color: rgb(46, 70, 136);
+    color:whitesmoke;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+hr{
+    border-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#gratki{
+    text-align: center;
+    background-color: rgb(46, 70, 136);
+    color: whitesmoke;
+    border-radius: 50px;
+    
+}
+
+h3{
+    background-color: thistle;
+    border-radius: 10px;
+}

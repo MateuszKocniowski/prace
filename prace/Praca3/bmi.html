@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+
+
+<script>
+var masa = prompt("masa");
+var wzrost = prompt("wzrost");
+var bmi = ((masa * 1000) / (wzrost * wzrost));
+
+document.write("<p>" + (bmi * 10).toFixed(2) + "</p>")
+
+if ((bmi * 10) <=18)
+{
+    document.write("<p>niedowaga</p>")
+}
+else if ((bmi * 10) <=24)
+{
+    document.write("<p>norma</p>")
+}
+else if ((bmi * 10) <=29)
+{
+    document.write("<p>nadwaga</p>")
+}
+else if ((bmi * 10) <=39)
+{
+    document.write ("<p>otyłość</p>")
+}
+else
+{
+    document.write("<p>poważna otyłość</p>")
+}
+
+
+
+
+</script>
+</body>
+</html>
